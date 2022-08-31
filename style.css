@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fredoka+One&family=Hind+Siliguri&family=Jost&family=Maven+Pro:wght@500&family=Montserrat:wght@400;600&family=Paytone+One&family=Poppins:wght@200;500&family=Righteous&family=Roboto&family=Rubik+Burned&family=Russo+One&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    background: #7030cc;
+    padding: 40px;
+}
+#threeDot{
+    display: none;
+}
+#threeDot2{
+    display: none;
+}
+#logo{
+    width: 120px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#rightNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+header li{
+    color: white;
+    list-style: none;
+}
+button{
+    padding: 15px 30px 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    background-color: #1bbcef;
+}
+
+/* section */
+#section1{
+    background: #7030cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 50px 100px;
+    gap: 100px;
+}
+#section1Img{
+    width: 45vw;
+}
+#section1Left h1{
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+    color: white;
+}
+#section1Left p{
+    color: white;
+}
+
+/* section 2 */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section2{
+    gap: 150px;
+}
+#section2 h2{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+#section2 img{
+    width: 45vw;
+}
+#section2 svg{
+    width: 15px;
+    color: #7030cc;
+}
+.sectionList{
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.section2CardHeading{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.section2CardHeading p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.cardPera{
+    text-align: left;
+    margin: 15px 0px 20px 35px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+/* section3 */
+
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.icon{
+    width: 50px;
+}
+.iconContainer{
+    padding: 30px;
+    border-radius: 50%;
+    background: #faeaeb;
+    margin: 20px 0px 20px 0px;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(177, 177, 177);
+    border-radius: 20px;
+
+}
+.cardContainer p{
+        text-align: center;
+        color: black;
+        margin-top: 10px;
+        font-size: 1rem;
+}
+
+.cardDetail{
+        padding: 20px;
+        border-radius: 20px;
+}
+.cardActive{
+    background-color: #7030cc;
+}
+.cardHeading{
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+.cardHeadingActive{
+    color: white;
+}
+.cardActive p{
+    color: white;
+}
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width: 1400px) {
+    header{
+        gap: 230px;
+    }
+    #section1Left h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 1200px) {
+    header{
+        gap: 180px;
+    }
+    button{
+        font-size: 1rem;
+    }
+    #rightNav{
+        gap: 50px;
+    }
+    header ul{
+        gap: 25px;
+    }
+    #section1Img{
+        width: 30vw;
+    }
+    #section1{
+        padding-right: 50px;
+    }
+    #section2{
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media (max-width: 1000px) {
+    header ul{
+        display: none;
+    }
+    header{
+        gap: 20vw;
+    }
+    button{
+        font-size: 1.2rem;
+    }
+    #threeDot{
+        display: block;
+        color: white;
+        margin-right: 70px;
+    }
+    #section1Left p{
+        font-size: 0.8rem;
+    }
+    #section1{
+        gap: 50px;
+    }
+    #section2{
+        gap: 50px;
+    }
+    #section2 img{
+        width: 35vw;
+    }
+    #section2 h2{
+        font-size: 1.5rem;
+    }
+    .section2CardHeading p{
+        font-size: 1rem;
+    }
+    .cardPera{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:800px) {
+    #threeDot{
+        margin-right: 60px;
+    }
+    button{
+        font-size: 0.8rem;
+    }
+    header{
+        gap: 15vw;
+    }
+    #section1Left p{
+        font-size: 0.6rem;
+    }
+    #section1Left h1{
+        font-size: 2rem;
+    }
+    #section1Img{
+        width: 30vw;
+    }
+    #section1{
+        padding-left: 20px;
+    }
+    #section2 h2{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    #section2{
+        gap: 20px;
+    }
+    #section2 img{
+        width: 40vw;
+    }
+}
+@media (max-width:600px) {
+    #threeDot{
+        display: none;
+    }
+    #threeDot2{
+        display: block;
+        color: white;
+    }
+    button{
+        font-size: 0.8rem;
+        padding: 10px 20px 10px 20px;
+    }
+    header{
+        padding: 20px;
+        gap: 30vw;
+    }
+    #rightNav{
+        gap: 20px;
+    }
+    #logo{
+        width: 100px;
+    }
+    #section1{
+        padding: 0px 40px 20px 40px;
+    }
+    #section1Left h1{
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    #section1Left p{
+        font-size: 0.45rem;
+    }
+    #section1{
+        gap: 20px;
+    }
+    #section2{
+        flex-direction: column;
+    }
+    #section2 img{
+        width: 70vw;
+    }
+    #section2 h2{
+       text-align: center;
+       font-size: 2rem;
+       margin-bottom: 50px;
+    }
+}
+@media (max-width:450px) {
+    header{
+        gap: 20vw;
+    }
+    #section1Left h1{
+        font-size: 1rem;
+    }
+    #section2 h2{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+     }
+}
